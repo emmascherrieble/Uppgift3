@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#member {
+    padding: 20px;
+    width: 100px;
+}
+
+#member fieldset {
+    background-color: rgb(73, 167, 94);
+    margin-bottom: 20px;
+}
+
+#member legend {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#send {
+    text-align: right;
+}
+
+#member fieldset div {
+    display: grid;
+    gap: 0.6em;
+    white-space: nowrap;
+}
+
+#customer div {
+    grid-template-columns: min-content auto;
+}
+
+#customer input {
+    width: 40ch;
+}
+
+#send input {
+    font-size: 1.5em;
+    border-radius: 0.6em;
+    background-color:  rgb(177, 180, 192);
+}
+
+h2 {
+    color: black;
+}

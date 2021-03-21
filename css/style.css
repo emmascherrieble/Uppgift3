@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: auto minmax(300px,800px) 200px auto;
+    grid-template-rows: 170px 100px auto 70px;
+    grid-template-areas: 
+    "header   header   header  header"
+    "nav      main     main    .     "
+    "footer   footer  footer   footer";
+}
+
+header {
+    grid-area: header;
+    background-image: url(../img/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+}
+
+hr{
+    color:#387438 ;
+}
+
+h2, h3{
+    color: #387438;
+    font-family: italic;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+    margin: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    color: #387438;
+}
+
+nav a:hover, nav a:active {
+    color: black;
+}
+
+nav a.thisPage {
+    color: black;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    padding: 70px;
+    grid-area: footer;
+}
+
+header h1 {
+    text-indent: -9999px;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        grid-template-columns: auto minmax(300px,450px) 200px auto;
+        grid-template-rows: min-content 250px auto 70px;
+        grid-template-areas: 
+        "header   header   header"
+        "nav      nav      nav   "
+        ".        main     main  "
+        "footer   footer   footer";
+    }
+    nav ul {
+        flex-direction: row;
+        margin: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        display: block;
+    }
+
+    #header {
+        background-image: none;
+        background-color: #387438;
+    }
+}
+
+@media screen and (max-width:420px) {
+    #menuicon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #menucheckbox {
+        display: none;
+    }
+
+    #menucheckbox ~ ul {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+

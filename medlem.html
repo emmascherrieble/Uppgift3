@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klacksparken BK - Medlem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+
+<body>
+    <nav>
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="ceckbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="lagen.html">Lagen</a></li>
+            <li><a href="medlem.html" class="thisPage">Medlem</a></li>
+            <li><a href="shop.html">Webbshop</a></li>
+            <li><a href="kontakt.html">Kontakter</a></li>
+    </nav>
+    <header id="header">
+        <h1>Klacksparken BK</h1>
+    </header>
+<main>
+    <form id="member" method="POST" data-netlify="true">
+        <fieldset id="member">
+            <legend> <h2>Medlem</h2></legend>
+            <div>
+                <label>
+                    <p>Kul att du vill bli medlem hos Klacksparken BK.</p>
+                    <p>Fyll i nedanstående uppgifter och skicka in din anmälan så kommer ett välkomstbrev hem på posten tillsammans med en betalningsblankett. </p>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset id="customer">
+            <legend><h2>Kund</h2></legend>
+            <div>
+               <label for="name">* Förnamn:</label>
+               <input type="text" name="name" id="name" required>
+               <label for="lastname">* Efternamn:</label>
+               <input type="text" name="lastname" id="lastname" required>
+               <label for="social">* Personnummer:</label>
+               <input type="text" name="social" id="social" required>
+               <label for="street">* Gatuadress:</label>
+               <input type="text" name="street" id="street" required>
+               <label for="zipcode">* Postnr:</label>
+               <input type="text" name="zipcode" id="zipcode"required>
+               <label for="city">* Ort:</label>
+               <input type="text" name="city" id="city" required>
+               <label for="number">Telefon:</label>
+               <input type="text" name="number" id="number">
+            </div>
+        </fieldset>
+        <div id="send">
+            <input type="submit" value="Skicka">
+        </div>
+    </form>
+</main>
+</body>
+</html>

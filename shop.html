@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klacksparken BK - Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <nav>
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="ceckbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="lagen.html">Lagen</a></li>
+            <li><a href="medlem.html">Medlem</a></li>
+            <li><a href="shop.html" class="thisPage">Webbshop</a></li>
+            <li><a href="kontakt.html">Kontakter</a></li>
+    </nav>
+    <header id="header">
+        <h1>Klacksparken BK</h1>
+    </header>
+<main>
+<form id="shop" method="POST" data-netlify="true">
+
+<h2>Shop</h2>
+<hr>
+<p>Klacksparkens profilkläder finns på kansliet för utprovning om man är osäker på storlek.</p>
+<p>Leveranstiden brukar vara upp mot en vecka.</p>
+        <figure>
+            <img src="img/whitetshirt.jpg" alt="vit t-shirt">
+            <figurecaption>Ordernummer:325678</figurecaption>
+            <img src="img/greentshirt.jpg" alt="grön t-shirt">
+            <figurecaption>Ordernummer:987553</figurecaption>
+            <img src="img/longwshirt.jpg" alt="vit långärmad tröja">
+            <figurecaption>Ordernummer:123987</figurecaption>
+            <img src="img/longgshirt.jpg" alt="långärmad grön tröja">
+            <figurecaption>Ordernummer:765012</figurecaption>
+            <img src="img/whiteshorts.jpg" alt="vita shorts">
+            <figurecaption>Ordernummer:998265</figurecaption>
+            <img src="img/greenshorts.jpg" alt="gröna shorts">
+            <figurecaption>Ordernummer:729056</figurecaption>
+            <img src="img/socks.jpg" alt="vita strumpor">
+            <figurecaption>Ordenummer:843562</figurecaption>
+        </figure>
+
+        <fieldset>
+            <legend>Ordernummer</legend>
+            <label>* Nr:
+                <input type="orders" name="orders" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Storlek</legend>
+            <div>
+                <label>
+                    Tröjor <select name="size">
+                        <option value="XS" selected>XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Byxor <select name="size">
+                        <option value="XS" selected>XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Strumpor <select name="size">
+                        <option value="30-32" selected>30-32</option>
+                        <option value="33-35">33-35</option>
+                        <option value="36-38">36-38</option>
+                        <option value="39-40">39-40</option>
+                        <option value="41-43">41-43</option>
+                        <option value="44-46">44-46</option>
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset id="customer">
+            <legend>Uppgifter</legend>
+            <div>
+               <label for="name">* Förnamn:</label>
+               <input type="text" name="name" id="name" required>
+               <label for="lastname">* Efternamn:</label>
+               <input type="text" name="lastname" id="lastname" required>
+               <label for="social">Personnummer:</label>
+               <input type="text" name="social" id="social">
+               <label for="street">* Gatuadress:</label>
+               <input type="text" name="street" id="street" required>
+               <label for="zipcode">* Postnr:</label>
+               <input type="text" name="zipcode" id="zipcode" required>
+               <label for="city">* Ort:</label>
+               <input type="text" name="city" id="city" required>
+               <label for="number">Telefon:</label>
+               <input type="text" name="number" id="number">
+            </div>
+        </fieldset>
+        <div id="send">
+            <input type="submit" value="Skicka">
+        </div>
+    </form>
+</main>
+</body>
+</html>

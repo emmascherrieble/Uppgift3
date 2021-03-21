@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#shop {
+    padding: 20px;
+}
+
+#shop fieldset {
+    background-color:  rgb(73, 167, 94);
+    margin-bottom: 20px;
+}
+
+#shop legend {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#send {
+    text-align: right;
+}
+
+#shop fieldset div {
+    display: grid;
+    gap: 0.6em;
+    white-space: nowrap;
+}
+
+#customer div {
+    grid-template-columns: min-content auto;
+}
+
+#customer input {
+    width: 40ch;
+}
+
+#send input {
+    font-size: 1.5em;
+    border-radius: 0.6em;
+    background-color: rgb(177, 180, 192);
+}
+
+#shop img {
+    max-width: 150px;
+    padding: 30px;
+    display: inline;
+}
+
+figure {
+    float: left;
+}
+
+figure img {
+    width: 150;
+    max-width: 150px;
+}
+
+figure figcaption {
+    font-family: italic;
+}

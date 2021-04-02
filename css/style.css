@@ -46,6 +46,7 @@ h2, h3, h5 {
 
 main {
     grid-area: main;
+    margin: 30px;
 }
 
 iframe {

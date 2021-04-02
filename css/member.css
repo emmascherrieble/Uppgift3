@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-#member {
+#customer {
     padding: 20px;
     width: 100px;
 }
 
-#member fieldset {
+fieldset {
     background-color: rgb(73, 167, 94);
     margin-bottom: 20px;
 }
 
-#member legend {
+fieldset legend {
     font-weight: bold;
     font-style: normal;
 }
@@ -19,21 +19,19 @@
     text-align: right;
 }
 
-#member fieldset div {
+fieldset div {
     display: grid;
     gap: 0.6em;
     white-space: nowrap;
-}
-
-#customer div {
     grid-template-columns: min-content auto;
 }
 
-#customer input {
+fieldset input {
     width: 40ch;
 }
 
 #send input {
+    margin-right: 65px;
     font-size: 1.5em;
     border-radius: 0.6em;
     background-color:  rgb(177, 180, 192);

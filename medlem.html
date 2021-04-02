@@ -11,28 +11,23 @@
 <body>
     <nav>
         <label for="menucheckbox" id="menuicon"></label>
-        <input type="ceckbox" id="menucheckbox">
+        <input type="checkbox" id="menucheckbox">
         <ul>
             <li><a href="index.html">Start</a></li>
             <li><a href="lagen.html">Lagen</a></li>
             <li><a href="medlem.html" class="thisPage">Medlem</a></li>
             <li><a href="shop.html">Webbshop</a></li>
             <li><a href="kontakt.html">Kontakter</a></li>
+        </ul>
     </nav>
     <header id="header">
         <h1>Klacksparken BK</h1>
     </header>
 <main>
+    <h2>Medlemskap</h2>
+        <p>Kul att du vill bli medlem hos Klacksparken BK.</p>
+        <p>Fyll i nedanstående uppgifter och skicka in din anmälan så kommer ett välkomstbrev hem på posten tillsammans med en betalningsblankett.</p>
     <form id="member" method="POST" data-netlify="true">
-        <fieldset id="member">
-            <legend> <h2>Medlem</h2></legend>
-            <div>
-                <label>
-                    <p>Kul att du vill bli medlem hos Klacksparken BK.</p>
-                    <p>Fyll i nedanstående uppgifter och skicka in din anmälan så kommer ett välkomstbrev hem på posten tillsammans med en betalningsblankett. </p>
-                </label>
-            </div>
-        </fieldset>
         <fieldset id="customer">
             <legend><h2>Kund</h2></legend>
             <div>
@@ -45,7 +40,7 @@
                <label for="street">* Gatuadress:</label>
                <input type="text" name="street" id="street" required>
                <label for="zipcode">* Postnr:</label>
-               <input type="text" name="zipcode" id="zipcode"required>
+               <input type="text" name="zipcode" id="zipcode" required>
                <label for="city">* Ort:</label>
                <input type="text" name="city" id="city" required>
                <label for="number">Telefon:</label>

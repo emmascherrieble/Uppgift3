@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+margin: 50px;
+}
+
 #shop {
     padding: 20px;
 }
@@ -42,17 +46,4 @@
     max-width: 150px;
     padding: 30px;
     display: inline;
-}
-
-figure {
-    float: left;
-}
-
-figure img {
-    width: 150;
-    max-width: 150px;
-}
-
-figure figcaption {
-    font-family: italic;
 }

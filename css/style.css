@@ -24,7 +24,7 @@ body {
     grid-template-areas: 
     "header   header   header  header"
     "nav      main     main    .     "
-    "footer   footer  footer   footer";
+    "nav   footer  footer   footer";
 }
 
 header {
@@ -35,11 +35,11 @@ header {
     color: #ffffff;
 }
 
-hr{
+hr {
     color:#387438 ;
 }
 
-h2, h3{
+h2, h3, h5 {
     color: #387438;
     font-family: italic;
 }
@@ -48,9 +48,14 @@ main {
     grid-area: main;
 }
 
-nav {
+iframe {
+border: none;
+}
+
+nav li{
     grid-area: nav;
-    margin: 30px;
+    margin: 10px;
+    
 }
 
 nav ul {
